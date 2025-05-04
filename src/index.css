@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-bg-primary text-text-primary font-inter leading-relaxed overflow-x-hidden;
+  }
+  ::selection {
+    @apply bg-accent text-white;
+  }
+  /* Adicione aqui estilos globais mínimos ou CSS customizado que
+     seja muito difícil/verboso de fazer com Tailwind, se necessário.
+     Ex: Potencialmente o posicionamento exato do ::after da timeline se
+     o Tailwind arbitrário não funcionar 100%. */
+
+  /* Exemplo de como manter CSS customizado para timeline ::after se necessário:
+  .timeline-item::after {
+      content: '';
+      @apply absolute w-4 h-4 bg-bg-primary border-[3px] border-accent rounded-full;
+      top: 28px;
+      transform: translateY(-50%);
+      z-index: 2;
+      transition: background-color 0.3s ease;
+  }
+  .timeline-item:nth-child(odd)::after {
+      right: calc(-2.5rem - 8px);
+      left: auto;
+  }
+  .timeline-item:nth-child(even)::after {
+      left: calc(-2.5rem - 8px);
+      right: auto;
+  }
+  .timeline-item:hover::after {
+      @apply bg-accent;
+  }
+  @media (max-width: 992px) {
+      .timeline-item::after { left: -33px; right: auto; }
+  }
+  @media (max-width: 576px) {
+      .timeline-item::after { left: -28px; right: auto; }
+  }
+  */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Animações on scroll (classe base controlada por JS/React) */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+.animate-on-scroll.fade-in { transform: translateY(20px); }
+.animate-on-scroll.slide-in-left { transform: translateX(-40px); }
+.animate-on-scroll.slide-in-right { transform: translateX(40px); }
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }

@@ -1,0 +1,11 @@
+---
+title: Exploração de dados categóricos 4549f2c4a30d48eaa04a8f9eeb4994b5
+updated: 2024-02-21 21:15:50Z
+created: 2024-02-21 18:16:19Z
+---
+
+# Exploração de dados categóricos
+
+Created: February 13, 2024 6:22 PM
+Objetivo: Esta unidade aborda métodos para se trabalhar dados divididos em categorias. Aprenda a usar gráficos de barra, diagramas de Venn e tabelas de contingência para ver padrões e relações em dados categóricos.
+Status: Not started
