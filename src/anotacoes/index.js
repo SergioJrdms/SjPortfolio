@@ -1,87 +1,102 @@
-// src/anotacoes/index.js
-
 import React from 'react';
 
-// Função processNote (mantida como antes)
 const processNote = (meta) => {
-    // Tenta gerar um título fallback se não houver um definido nos metadados
-    const fallbackTitle = meta.slug?.split('/').pop() // Pega a última parte (nome do arquivo/slug)
-        .replace(/_/g, ' ') // Substitui _ por espaço
-        .replace(/-/g, ' ') // Substitui - por espaço
-        .replace(/\.md$/i, '') // Remove extensão .md (se houver no slug acidentalmente)
-        .replace(/%20/g, ' '); // Substitui %20 (se vier da URL) por espaço
+    const fallbackTitle = meta.slug?.split('/').pop().replace(/_/g, ' ').replace(/-/g, ' ').replace(/\.md$/i, '').replace(/%20/g, ' ').replace(/&/g, 'e'); // Tenta limpar nome para fallback
     return {
         ...meta,
         title: meta.title || fallbackTitle || 'Sem Título',
-        // Placeholder para o conteúdo que será carregado via fetch
         Content: () => React.createElement('div', { style: { color: 'orange' } }, `Conteúdo para ${meta.slug} será carregado via fetch.`),
     };
 };
 
-// Lista MANUAL de metadados. *** VERIFIQUE E COMPLETE COM SEUS DADOS EXATOS ***
+// Lista MANUAL de metadados.
 export const allNotesMeta = [
-  // --- Exemplo Corrigido baseado na imagem image_453ba2.png ---
-  processNote({
-    // SLUG: Caminho relativo DENTRO de public/anotacoes, SEM extensão .md
-    // Pasta: ProductOwner / Subpasta: ProductOwnerIBM / Arquivo: TheProductOwnerProfessionUnleashingthePowe
-    slug: 'Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe',
+    // === Notas dentro de Product Owner/Product Owner IBM/ ===
+    processNote({
+        slug: 'Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1',
+        path: '/anotacoes/Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1.md',
+        title: 'Communications & Stakeholder Management - Modulo 2', // Preencher via Front Matter ou aqui
+        date: '2025-04-26', // Adicione a data YYYY-MM-DD
+        excerpt: 'Técnicas avançadas em colaboração e desenvolvimento de produto.', // Adicione um resumo
+        tags: ['Communication', 'Stakeholder', 'IBM', 'Product Owner'], // Adicione tags relevantes
+    }),
+    processNote({
+        slug: 'Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-2',
+        path: '/anotacoes/Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-2.md',
+        title: 'Communications & Stakeholder Management - Modulo 3',
+        date: '2025-04-28',
+        excerpt: 'Gerenciando entregas de produtos por meio de colaboração eficaz.',
+        tags: ['Communication', 'Stakeholder', 'IBM', 'Product Owner'],
+    }),
+    processNote({
+        slug: 'Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert', // Assumindo que era Cert e não Cert-3
+        path: '/anotacoes/Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert.md',
+        title: 'Communications & Stakeholder Management - Modulo 1',
+        date: '2025-04-23',
+        excerpt: 'Fundamentos da colaboração.',
+        tags: ['Communication', 'Stakeholder', 'IBM', 'Product Owner'],
+    }),
+     processNote({
+        slug: 'Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM -2', // Atenção ao '-1'
+        path: '/anotacoes/Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM -2.md',
+        title: 'Introduction to Agile Development and Scrum - Modulo 3',
+        date: '2025-04-19',
+        excerpt: 'Execução diária.',
+        tags: ['Agile', 'Scrum', 'IBM', 'Product Owner'],
+    }),
+    processNote({
+        slug: 'Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM -1', // Atenção ao '-2'
+        path: '/anotacoes/Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM -1.md',
+        title: 'Introduction to Agile Development and Scrum - Modulo 2',
+        date: '2025-04-18',
+        excerpt: 'Planejamento ágil.',
+        tags: ['Agile', 'Scrum', 'IBM', 'Product Owner'],
+    }),
+     processNote({
+        slug: 'Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM ', // Atenção ao espaço no final
+        path: '/anotacoes/Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM .md', // Atenção ao espaço
+        title: 'Introduction to Agile Development and Scrum - Modulo 1',
+        date: '2025-04-14',
+        excerpt: 'Introdução a metodologia ágil e scrum.',
+        tags: ['Agile', 'Scrum', 'IBM', 'Product Owner'],
+    }),
+    processNote({
+        // Slug e Path baseados EXATAMENTE no nome do arquivo da imagem
+        slug: 'Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe',
+        path: '/anotacoes/Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe.md',
+        // Metadados - Preencha ou use Front Matter
+        title: 'The Product Owner Profession:  Unleashing the Power of Scrum', // Corrigido aqui vs slug
+        date: '2025-04-10', // Manteve exemplo
+        excerpt: 'Explorando o papel fundamental do Product Owner no Scrum.',
+        tags: ['Product Owner', 'Scrum', 'IBM'],
+    }),
 
-    // PATH: Caminho completo a partir de /, incluindo /anotacoes/ e extensão .md
-    // Deve corresponder EXATAMENTE ao arquivo em public/anotacoes/
-    path: '/anotacoes/Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe.md',
 
-    // Metadados (Ajuste se necessário)
-    title: 'The Product Owner Profession: Unleashing the Power', // Ou pegue do frontmatter se houver
-    date: '2024-04-10',
-    excerpt: 'Explorando o papel fundamental do Product Owner no Scrum...',
-    tags: ['Product Owner', 'Scrum', 'IBM'],
-  }),
-
-  // --- Exemplo para "Communications & Stakeholder Management - IBM Cert-1.md" ---
-  // !!! VERIFIQUE OS NOMES EXATOS !!!
-  processNote({
-    slug: 'Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1', // Mantenha '&', espaços, hífens
-    path: '/anotacoes/Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1.md', // Mantenha '&', espaços, hífens
-    title: 'Communications & Stakeholder Management - IBM Cert-1', // Título fallback ou defina um melhor
-    date: '', // Adicione a data
-    excerpt: '', // Adicione o resumo
-    tags: ['Communication', 'Stakeholder', 'IBM'], // Adicione tags
-  }),
-
-   // --- Exemplo para "Introduction to Agile Development and Scrum - IBM .md" ---
-   // !!! VERIFIQUE O NOME EXATO (parece ter espaço antes do .md?) !!!
-   processNote({
-    slug: 'Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM ', // Mantenha o espaço se existir no nome
-    path: '/anotacoes/Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM .md', // Mantenha o espaço se existir
-    title: 'Introduction to Agile Development and Scrum - IBM', // Título fallback
-    date: '',
-    excerpt: '',
-    tags: ['Agile', 'Scrum', 'IBM'],
-  }),
-
-  
+    // --- Adicione outras notas de OUTRAS pastas aqui ---
+    // Exemplo:
+    // processNote({
+    //   slug: 'HardSkills/Lideranca/nota-sobre-lideranca', // Adapte ao seu nome real
+    //   path: '/anotacoes/HardSkills/Lideranca/nota-sobre-lideranca.md', // Adapte ao seu nome real
+    //   title: 'Nota Sobre Liderança',
+    //   date: '2024-03-15',
+    //   excerpt: 'Principais conceitos de liderança moderna...',
+    //   tags: ['Liderança', 'Hard Skills'],
+    // }),
 
 
-  // !!! ADICIONE AQUI um objeto processNote({...}) para CADA uma das suas outras notas !!!
-  // Lembre-se de usar os nomes EXATOS das pastas e arquivos que estão em public/anotacoes/
+].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0)); // Ordena por data (mais recentes primeiro)
 
 
-].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
-
-
-// Função getNoteMetaBySlug (com logs, sem alterações na lógica)
+// Função getNoteMetaBySlug (com logs)
 export const getNoteMetaBySlug = (slug) => {
     console.log("--- getNoteMetaBySlug ---");
     const decodedSlug = decodeURIComponent(slug || '');
     console.log(`Buscando metadados para slug decodificado da URL: "${decodedSlug}"`);
-
     const foundMeta = allNotesMeta.find(note => {
         const currentNoteSlug = note.slug || '';
         console.log(`Comparando: URL ("${decodedSlug}") === Index ("${currentNoteSlug}")`);
-        // Adiciona trim() para remover espaços extras acidentais no início/fim
         return currentNoteSlug.trim() === decodedSlug.trim();
     });
-
     if (!foundMeta) {
         console.error(`ERRO: Metadados não encontrados para o slug "${decodedSlug}". Verifique se este slug existe EXATAMENTE IGUAL no array allNotesMeta em src/anotacoes/index.js.`);
         console.log("Slugs disponíveis definidos no index.js:", allNotesMeta.map(n => n.slug));
@@ -93,4 +108,5 @@ export const getNoteMetaBySlug = (slug) => {
     return foundMeta;
 };
 
+// Função para pegar todos os metadados para a lista
 export const getAllNotesMeta = () => allNotesMeta;

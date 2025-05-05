@@ -9,7 +9,40 @@ longitude: -46.86804100
 altitude: 0.0000
 ---
 
-[toc]
+- [Course Introduction](#course-introduction)
+    - [Para quem é este curso?](#para-quem-é-este-curso)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Conteúdo do curso](#conteúdo-do-curso)
+    - [Estrutura de aprendizado](#estrutura-de-aprendizado)
+    - [Como maximizar seu aprendizado](#como-maximizar-seu-aprendizado)
+- [Define the Communications Model](#define-the-communications-model)
+    - [Modelos de Comunicação](#modelos-de-comunicação)
+        - [Modelo Shannon-Weaver](#modelo-shannon-weaver)
+        - [Modelo SMCR de Berlow](#modelo-smcr-de-berlow)
+        - [Modelo de Schramm](#modelo-de-schramm)
+        - [Modelo de Barnland](#modelo-de-barnland)
+        - [Modelo Interativo de Comunicação](#modelo-interativo-de-comunicação)
+    - [Melhores Práticas para Comunicação Efetiva](#melhores-práticas-para-comunicação-efetiva)
+    - [Conclusão](#conclusão)
+- [Collaboration and Product Vision](#collaboration-and-product-vision)
+    - [Objetivos de aprendizagem](#objetivos-de-aprendizagem)
+    - [Introdução:](#introdução)
+    - [Formato da Visão do Produto:](#formato-da-visão-do-produto)
+    - [Exemplo: Visão do Produto para Modernização de Site](#exemplo-visão-do-produto-para-modernização-de-site)
+- [The Need for Effective Communications Planning](#the-need-for-effective-communications-planning)
+    - [Comunicação e Gestão de Produto](#comunicação-e-gestão-de-produto)
+    - [Estruturando a Comunicação](#estruturando-a-comunicação)
+    - [A Importância do Plano de Comunicação](#a-importância-do-plano-de-comunicação)
+    - [Elementos-Chave para um Plano de Comunicação Efetivo](#elementos-chave-para-um-plano-de-comunicação-efetivo)
+    - [Resumo](#resumo)
+- [Expert Viewpoints: Communications: Significance of Planning](#expert-viewpoints-communications-significance-of-planning)
+    - [A Importância da Comunicação para um Product Owner](#a-importância-da-comunicação-para-um-product-owner)
+    - [Elementos-Chave de um Plano de Comunicação Eficaz](#elementos-chave-de-um-plano-de-comunicação-eficaz)
+    - [Quando um Product Owner Deve Comunicar Fora do Plano de Comunicação](#quando-um-product-owner-deve-comunicar-fora-do-plano-de-comunicação)
+- [Expert Viewpoints: The Importance of Communication and Collaboration](#expert-viewpoints-the-importance-of-communication-and-collaboration)
+    - [Como Comunicação e Colaboração Trabalham Juntas](#como-comunicação-e-colaboração-trabalham-juntas)
+    - [Melhores Práticas para Colaboração em Equipe](#melhores-práticas-para-colaboração-em-equipe)
+- [Summary and Highlights: Foundations of Collaboration](#summary-and-highlights-foundations-of-collaboration)
 
 > **Modulo 1 - Parte 1** Course Introduction
 
