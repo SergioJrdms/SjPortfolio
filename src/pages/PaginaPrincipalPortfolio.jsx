@@ -90,6 +90,7 @@ function App() {
   return (
     <>
       <main>
+      <Header activeSection={activeSection} />
         <Hero />
         <About />
         <Experience />

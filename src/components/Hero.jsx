@@ -6,9 +6,10 @@ function Hero() {
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-16">
       {/* Background Gradiente Roxo */}
       <div
-        className="hero-before absolute top-0 left-0 h-full w-full -z-10 bg-[radial-gradient(circle_at_top_left,_#5200be24,_rgba(18,18,18,0)_90%)] pointer-events-none"
+        className="hero-before absolute top-0 left-0 h-full w-full -z-10 bg-[radial-gradient(circle_at_top_left,_#6500be3c,_rgba(18,18,18,0)_90%)] pointer-events-none"
         aria-hidden="true"
       ></div>
+      
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="hero-content mx-auto max-w-3xl text-center md:text-left">
@@ -16,13 +17,11 @@ function Hero() {
           <span className="hero-subtitle inline-block animate-on-scroll fade-in delay-1 mb-4 rounded-full bg-accent-light px-5 py-1.5 text-sm font-medium text-accent animate-pulse">
             Product Owner & Coordenador de BI
           </span>
-          <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-bold leading-tight text-text-primary sm:text-5xl lg:text-6xl">
+          <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"> {/* font-extrabold, tracking-tight */}
             Transformando Dados em Decisões e Visão em Produtos
           </h1>
-
-          {/* ===== PARÁGRAFO ATUALIZADO ===== */}
-          <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg text-text-secondary">
-             Graduando em Ciência de Dados e Técnico em Informática, combino conhecimentos de Business Intelligence, desenvolvimento e liderança para criar soluções data-driven. Aberto a oportunidades para aplicar e expandir meu potencial em projetos inovadores.
+          <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-text-secondary"> {/* text-lg, leading-relaxed */}
+            Graduando em Ciência de Dados e Técnico em Informática, combino conhecimentos de Business Intelligence, desenvolvimento e liderança para criar soluções data-driven. Aberto a oportunidades para aplicar e expandir meu potencial em projetos inovadores.
           </p>
           {/* ===== FIM DA ATUALIZAÇÃO ===== */}
 
@@ -38,8 +37,10 @@ function Hero() {
       </div>
 
       {/* Formas Flutuantes e Scroll Indicator (sem alterações) */}
-      <div className="hero-shape absolute bottom-[-10%] right-[5%] -z-10 h-[250px] w-[250px] rounded-[65%_35%_65%_35%_/_35%_65%_35%_65%] bg-hero-shape opacity-[.04] animate-float pointer-events-none"></div>
-      <div className="hero-shape absolute top-[15%] left-[-5%] -z-10 h-[180px] w-[180px] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] bg-hero-shape opacity-[.03] animate-floatReverse pointer-events-none"></div>
+      <div className="hero-shape absolute bottom-[-10%] right-[5%] -z-10 h-[250px] w-[250px] rounded-[65%_35%_65%_35%_/_35%_65%_35%_65%] bg-hero-shape opacity-[.05] animate-float pointer-events-none"></div>
+      <div className="hero-shape absolute bottom-[-12%] right-[6%] -z-10 h-[250px] w-[250px] rounded-[65%_35%_65%_35%_/_35%_65%_35%_65%] bg-hero-shape opacity-[.03] animate-float pointer-events-none"></div>
+      <div className="hero-shape absolute top-[15%] left-[-5%] -z-10 h-[180px] w-[180px] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] bg-hero-shape opacity-[.05] animate-floatReverse pointer-events-none"></div>
+      <div className="hero-shape absolute top-[17%] left-[-5%] -z-10 h-[180px] w-[180px] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] bg-hero-shape opacity-[.05] animate-floatReverse pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 h-3/4 w-3/4 -z-20 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--color-red-darkest)_0%,_transparent_70%)] opacity-10 animate-pulseSlow pointer-events-none" aria-hidden="true"></div>
       <ScrollDownIndicator />
     </section>

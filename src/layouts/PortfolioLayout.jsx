@@ -22,7 +22,6 @@ const PortfolioLayout = () => {
   return (
     <>
       {/* Passa a seção ativa para o Header */}
-      <Header activeSection={activeSection} />
       <main>
         {/* Outlet renderiza o componente da rota atual (ex: PaginaPrincipalPortfolio) */}
         <Outlet />

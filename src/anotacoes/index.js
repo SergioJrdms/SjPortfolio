@@ -24,11 +24,11 @@ export const allNotesMeta = [
   processNote({
     // SLUG: Caminho relativo DENTRO de public/anotacoes, SEM extensão .md
     // Pasta: ProductOwner / Subpasta: ProductOwnerIBM / Arquivo: TheProductOwnerProfessionUnleashingthePowe
-    slug: 'ProductOwner/ProductOwnerIBM/TheProductOwnerProfessionUnleashingthePowe',
+    slug: 'Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe',
 
     // PATH: Caminho completo a partir de /, incluindo /anotacoes/ e extensão .md
     // Deve corresponder EXATAMENTE ao arquivo em public/anotacoes/
-    path: '/anotacoes/ProductOwner/ProductOwnerIBM/TheProductOwnerProfessionUnleashingthePowe.md',
+    path: '/anotacoes/Product Owner/Product Owner IBM/TheProductOwnerProfessionUnleashingthePowe.md',
 
     // Metadados (Ajuste se necessário)
     title: 'The Product Owner Profession: Unleashing the Power', // Ou pegue do frontmatter se houver
@@ -40,8 +40,8 @@ export const allNotesMeta = [
   // --- Exemplo para "Communications & Stakeholder Management - IBM Cert-1.md" ---
   // !!! VERIFIQUE OS NOMES EXATOS !!!
   processNote({
-    slug: 'ProductOwner/ProductOwnerIBM/Communications & Stakeholder Management - IBM Cert-1', // Mantenha '&', espaços, hífens
-    path: '/anotacoes/ProductOwner/ProductOwnerIBM/Communications & Stakeholder Management - IBM Cert-1.md', // Mantenha '&', espaços, hífens
+    slug: 'Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1', // Mantenha '&', espaços, hífens
+    path: '/anotacoes/Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1.md', // Mantenha '&', espaços, hífens
     title: 'Communications & Stakeholder Management - IBM Cert-1', // Título fallback ou defina um melhor
     date: '', // Adicione a data
     excerpt: '', // Adicione o resumo
@@ -51,8 +51,8 @@ export const allNotesMeta = [
    // --- Exemplo para "Introduction to Agile Development and Scrum - IBM .md" ---
    // !!! VERIFIQUE O NOME EXATO (parece ter espaço antes do .md?) !!!
    processNote({
-    slug: 'ProductOwner/ProductOwnerIBM/Introduction to Agile Development and Scrum - IBM ', // Mantenha o espaço se existir no nome
-    path: '/anotacoes/ProductOwner/ProductOwnerIBM/Introduction to Agile Development and Scrum - IBM .md', // Mantenha o espaço se existir
+    slug: 'Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM ', // Mantenha o espaço se existir no nome
+    path: '/anotacoes/Product Owner/Product Owner IBM/Introduction to Agile Development and Scrum - IBM .md', // Mantenha o espaço se existir
     title: 'Introduction to Agile Development and Scrum - IBM', // Título fallback
     date: '',
     excerpt: '',
