@@ -58,7 +58,7 @@ function Experience() {
     {
       title: "Business Intelligence Consultant",
       company: "Kalidash, São Paulo",
-      period: "10/2024 - 05/2025",
+      period: "10/2024 - 05/2025 (10 Meses)",
       descriptionItems: [
         "Consultor BI e membro fundador da célula 'Horizon Team', focada em consultoria de dados."
       ],
@@ -68,7 +68,7 @@ function Experience() {
     {
         title: "Full Stack Developer", // Título combinado
         company: "Kalidash, São Paulo",
-        period: "11/2023 – 10/2024 (10 meses)", // Ajustado para formato consistente
+        period: "11/2023 – 10/2024 (10 Meses)", // Ajustado para formato consistente
         descriptionItems: [
           "Desenvolvimento full stack da aplicação 'Kalidash' (visualização de dados) usando <span class='text-accent/80'>Next.js, React.js, TypeScript, PostgreSQL, TailwindCSS</span>.",
           "Atuação em engenharia de dados e melhorias no processo de ETL com ferramentas da Modern Data Stack (<span class='text-accent/80'>Airbyte, Airflow, AWS, Metabase</span>).",
