@@ -2,20 +2,44 @@ import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Ícones
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="mt-24 border-t border-border-color bg-bg-primary py-12">
+    // ===== MODIFICAÇÕES NA TAG FOOTER =====
+    <footer
+      className="mt-10 border-t border-accent/30 bg-gradient-to-b from-bg-secondary to-bg-primary py-16"
+      // bg-gradient-to-b from-bg-secondary to-bg-primary: Novo fundo
+      // border-accent/30: Borda superior com tom vermelho sutil
+      // py-16: Padding vertical aumentado
+    >
+    {/* ===== FIM DAS MODIFICAÇÕES ===== */}
       <div className="container mx-auto px-6">
         <div className="footer-content flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
-          <div className="social-links flex gap-6">
-          <a href="https://www.linkedin.com/in/ssergiojunior/" target="_blank" rel="noopener noreferrer" className="social-link text-2xl text-text-secondary transition-all duration-300 hover:text-accent hover:scale-110 hover:-translate-y-1" aria-label="LinkedIn">
-                <FaLinkedin />
+          <div className="social-links flex gap-4"> {/* Ajustado gap para acomodar padding no link */}
+            {/* ===== MODIFICAÇÕES NOS LINKS SOCIAIS ===== */}
+            <a
+              href="https://linkedin.com/in/ssergiojunior" // Use seu link correto
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link group rounded-full p-2 text-2xl text-text-secondary transition-all duration-300 ease-in-out hover:bg-bg-card hover:shadow-md"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="transition-colors duration-300 group-hover:text-accent group-hover:scale-110 group-hover:-translate-y-px" />
             </a>
-            <a href="https://github.com/SergioJrdms" target="_blank" rel="noopener noreferrer" className="social-link text-2xl text-text-secondary transition-all duration-300 hover:text-accent hover:scale-110 hover:-translate-y-1" aria-label="GitHub">
-                <FaGithub />
+            <a
+              href="https://github.com/sergiiojunior" // Use seu link correto
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link group rounded-full p-2 text-2xl text-text-secondary transition-all duration-300 ease-in-out hover:bg-bg-card hover:shadow-md"
+              aria-label="GitHub"
+            >
+              <FaGithub className="transition-colors duration-300 group-hover:text-accent group-hover:scale-110 group-hover:-translate-y-px" />
             </a>
+            {/* Adicione outros links sociais aqui seguindo o mesmo padrão */}
+            {/* ===== FIM DAS MODIFICAÇÕES ===== */}
           </div>
           <div className="copyright text-sm text-text-secondary">
-            &copy; {new Date().getFullYear()} Sergio Junior. Todos os direitos reservados.
+            &copy; {currentYear} Sergio Junior. Todos os direitos reservados.
           </div>
         </div>
       </div>

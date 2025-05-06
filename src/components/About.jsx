@@ -128,13 +128,13 @@ function About() {
           {/* Texto */}
           <div className="about-text animate-on-scroll slide-in-right delay-3">
             <h3 className="mb-6 text-2xl font-semibold">Data-Driven & Tech Enthusiast</h3>
-            <p className="mb-6 text-text-secondary text-base leading-relaxed">
+            <p className="mb-6 text-text-secondary text-lg leading-relaxed">
               Graduando em <span className="highlight">Ciência de Dados</span> (Anhanguera) e formado <span className="highlight">Técnico em Informática para Internet</span> (ETEC), busco constantemente expandir meus conhecimentos. Durante os estudos, exerci liderança e didática ao compartilhar conhecimentos de programação.
             </p>
-            <p className="mb-6 text-text-secondary text-base leading-relaxed">
-              Possuo experiência prática em todo o fluxo de <span className="highlight">Business Intelligence</span>, complementada por estudos autodidatas em <span className="highlight">Data Science</span>, Backend com Django e NLP. Sou apaixonado por usar dados para embasar decisões estratégicas e otimizar processos.
+            <p className="mb-6 text-text-secondary text-lg leading-relaxed">
+              Possuo experiência prática em todo o fluxo de <span className="highlight">Business Intelligence</span>, complementada por estudos autodidatas em <span className="highlight">Data Science</span>, Backend com Django e NLP. Como <span className="highlight">Product Manager</span>, foco em definir a visão e estratégia de produtos digitais, conectando as necessidades dos usuários com os objetivos de negócio.
             </p>
-             <p className="text-text-secondary text-base leading-relaxed">
+             <p className="text-text-secondary text-lg leading-relaxed">
               Estou sempre aberto a novas oportunidades que me permitam aplicar minhas habilidades e contribuir para o avanço de áreas focadas em dados e tecnologia.
             </p>
 
