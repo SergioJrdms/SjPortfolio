@@ -50,7 +50,9 @@ function Experience() {
       company: "Kalidash, São Paulo",
       period: "05/2025 - Presente",
       descriptionItems: [
-        ""
+        "Como membro fundador da 'Horizon Team', lidero e executo consultorias de dados, transformando necessidades de negócio em soluções de BI de ponta a ponta.",
+        "Responsável pela definição de escopo, roadmap e priorização de features para produtos de dados, alinhando entregas com as expectativas de clientes de diversos segmentos (varejo, indústria, serviços).",
+        "Liderança e execução de projetos de consultoria em BI, desde a concepção e levantamento de requisitos com stakeholders até a entrega de soluções de dados acionáveis para clientes de diversos segmentos como <span class='text-accent/80'>Neon, Pilão, Angelus e 3DLab</span>.",
       ],
       position: 'even', // 'odd' para esquerda, 'even' para direita no desktop
       delay: 'delay-2'
@@ -60,7 +62,12 @@ function Experience() {
       company: "Kalidash, São Paulo",
       period: "10/2024 - 05/2025",
       descriptionItems: [
-        "Consultor BI e membro fundador da célula 'Horizon Team', focada em consultoria de dados."
+        "Consultor BI e membro fundador da célula 'Horizon Team', focada em consultoria de dados.",
+        "Responsável por colocar a 'mão na massa' e ajudar a sua empresa a entender seus dados.",
+        "Desenvolvimento de dashboards estratégicos e operacionais (em <span class='text-accent/80'>Power BI, Looker Studio e Metabase</span>) para análise de performance de vendas, comportamento de clientes (RFV, Cohorts), funis de marketing e DRE, focando na usabilidade e na 'produtização' das análises.",
+        "Implementação e otimização de processos de ETL, integrando diversas fontes de dados (ERPs como <span class='text-accent/80'>Vensis e Mercante</span>, planilhas, APIs como <span class='text-accent/80'>Beehiiv e Kommo</span>) e utilizando ferramentas da Modern Data Stack para garantir qualidade e eficiência na preparação dos dados.",
+        "Criação de documentação técnica e de usuário para as soluções de BI, facilitando a adoção e promovendo uma cultura data-driven dentro das empresas clientes e internamente na Kalidash.",
+        "Aplicação de conceitos de <span class='text-accent/80'>Product Management</span> na definição do escopo das soluções de dados, priorização de features analíticas e no acompanhamento do ciclo de vida dos 'produtos de BI', garantindo alinhamento com as necessidades estratégicas dos clientes."
       ],
       position: 'odd', // 'odd' para esquerda, 'even' para direita no desktop
       delay: 'delay-4'

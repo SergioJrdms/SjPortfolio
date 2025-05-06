@@ -21,7 +21,7 @@ function Hero() {
             Transformando Dados em Decisões e Visão em Produtos
           </h1>
           <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-text-secondary"> {/* text-lg, leading-relaxed */}
-            Graduando em Ciência de Dados e Técnico em Informática, combino conhecimentos de Product Management, Business Intelligence, desenvolvimento e liderança para criar soluções data-driven. Aberto a oportunidades para aplicar e expandir meu potencial em projetos inovadores.
+          Transformo dados complexos em dashboards acionáveis e necessidades de negócio em produtos digitais valiosos. Minha paixão é unir a visão estratégica de Product Management com a inteligência do BI para impulsionar resultados concretos.
           </p>
           {/* ===== FIM DA ATUALIZAÇÃO ===== */}
 

@@ -115,30 +115,30 @@ function About() {
   return (
     <section id="about" className="relative py-24 bg-bg-secondary bg-radial-glow-bl overflow-hidden">
       <div className="container mx-auto px-6 relative z-[1]">
-        <h2 className="section-title text-center text-3xl font-semibold text-text-primary sm:text-4xl animate-on-scroll fade-in">Sobre Mim</h2>
+        <h2 className="section-title text-center text-3xl font-bold tracking-tight text-text-primary sm:text-4xl font-heading animate-on-scroll fade-in">
+          Sobre Mim
+        </h2>
         <hr className="section-divider mx-auto mb-12 w-16 border-none h-[3px] bg-gradient-to-r from-accent to-accent-hover animate-on-scroll fade-in delay-1" />
 
         <div className="about-content grid grid-cols-1 items-center gap-16 md:grid-cols-2">
-          {/* Imagem */}
           <div className="profile-img-container relative mx-auto max-w-sm animate-on-scroll slide-in-left delay-2 rounded-xl shadow-lg transition-all duration-500 hover:scale-103 hover:shadow-glow-hover overflow-hidden">
              <div className="absolute inset-0 z-10 bg-gradient-to-t from-accent-light/30 to-transparent transition-opacity duration-400 opacity-60 hover:opacity-20"></div>
-             <img src={minhaFoto} alt="Sergio Junior - Foto Profissional" className="profile-img block w-full rounded-xl transition-transform duration-500"/>
+             <img src={minhaFoto} alt="Foto de perfil profissional de Sergio Junior" className="profile-img block w-full rounded-xl transition-transform duration-500"/>
           </div>
-
-          {/* Texto */}
           <div className="about-text animate-on-scroll slide-in-right delay-3">
-            <h3 className="mb-6 text-2xl font-semibold">Data-Driven & Tech Enthusiast</h3>
+            <h3 className="mb-6 text-2xl font-semibold font-heading">Conectando Estratégia, Dados e Produtos</h3>
+            {/* ===== TEXTO ATUALIZADO ===== */}
             <p className="mb-6 text-text-secondary text-lg leading-relaxed">
-              Graduando em <span className="highlight">Ciência de Dados</span> (Anhanguera) e formado <span className="highlight">Técnico em Informática para Internet</span> (ETEC), busco constantemente expandir meus conhecimentos. Durante os estudos, exerci liderança e didática ao compartilhar conhecimentos de programação.
+              Minha trajetória é marcada pela busca constante em traduzir dados em inteligência e ideias em produtos de valor. Com formação em <span className="text-accent">Ciência de Dados</span> pela Anhanguera e <span className="text-accent">Técnico em Informática</span> pela ETEC, desenvolvi uma base sólida que me permite atuar de forma analítica e estratégica.
             </p>
             <p className="mb-6 text-text-secondary text-lg leading-relaxed">
-              Possuo experiência prática em todo o fluxo de <span className="highlight">Business Intelligence</span>, complementada por estudos autodidatas em <span className="highlight">Data Science</span>, Backend com Django e NLP. Como <span className="highlight">Product Manager</span>, foco em definir a visão e estratégia de produtos digitais, conectando as necessidades dos usuários com os objetivos de negócio.
+              Minha experiência prática em <span className="text-accent">Business Intelligence</span> envolve desde a concepção de dashboards de vendas e marketing até a otimização de processos ETL e análise de RFV para segmentação de clientes. Paralelamente, meus estudos em <span className="text-accent">Product Management</span> me capacitam a entender o ciclo de vida de um produto, definir roadmaps e priorizar features que realmente impactam o usuário e o negócio.
             </p>
              <p className="text-text-secondary text-lg leading-relaxed">
-              Estou sempre aberto a novas oportunidades que me permitam aplicar minhas habilidades e contribuir para o avanço de áreas focadas em dados e tecnologia.
+              Meu objetivo é "arrumar a casa" em relação a dados, promover uma cultura data-driven e garantir que as soluções desenvolvidas sejam não apenas tecnicamente robustas, mas também intuitivas e eficazes para o usuário final.
             </p>
-
-            <h4 className="skills-title mt-10 mb-4 text-lg font-semibold">Principais Habilidades:</h4>
+            {/* ===== FIM TEXTO ATUALIZADO ===== */}
+            <h4 className="skills-title mt-10 mb-4 text-lg font-semibold tracking-wide font-heading">Principais Habilidades e Ferramentas:</h4>
             <div className="skills flex flex-wrap gap-3 animate-on-scroll fade-in delay-4">
               <SkillTag>Business Intelligence</SkillTag>
               <SkillTag>Power BI</SkillTag>
@@ -170,12 +170,10 @@ function About() {
             </div>
           </div>
         </div>
-
-        {/* Stats Counter (Renderiza os CounterItems) */}
         <div className="stats-counter mt-20 grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8 animate-on-scroll fade-in delay-5">
              <CounterItem target={2} title="Anos de Experiência" />
-             <CounterItem target={10} title="Projetos Entregues" />
-             <CounterItem target={7} title="Dashboards Estratégicos" />
+             <CounterItem target={25} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
+             <CounterItem target={15} title="Dashboards Desenvolvidos" /> {/* Ajuste conforme sua realidade */}
         </div>
       </div>
     </section>
