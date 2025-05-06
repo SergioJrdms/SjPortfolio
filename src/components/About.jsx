@@ -173,7 +173,7 @@ function About() {
         <div className="stats-counter mt-20 grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8 animate-on-scroll fade-in delay-5">
              <CounterItem target={2} title="Anos de Experiência" />
              <CounterItem target={25} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
-             <CounterItem target={15} title="Dashboards Desenvolvidos" /> {/* Ajuste conforme sua realidade */}
+             <CounterItem target={15} title="Empresas Atendidas" /> {/* Ajuste conforme sua realidade */}
         </div>
       </div>
     </section>
