@@ -47,7 +47,7 @@ function Projects() {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <section id="projects" className="bg-bg-secondary py-24 overflow-hidden">
+    <section id="clients" className="bg-bg-secondary py-24 overflow-hidden">
       <div className="container mx-auto px-6">
         <h2 className="section-title text-center text-3xl font-bold tracking-tight text-text-primary sm:text-4xl animate-on-scroll fade-in">
           Empresas Atendidas
