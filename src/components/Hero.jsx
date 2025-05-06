@@ -26,8 +26,8 @@ function Hero() {
           {/* ===== FIM DA ATUALIZAÇÃO ===== */}
 
           <div className="btn-container animate-on-scroll fade-in delay-4 mb-20 flex flex-col items-center gap-4 md:flex-row md:justify-start">
-            <a href="#projects" className="btn block w-full rounded-full bg-red-bright border border-red-bright py-3 px-8 text-center font-medium text-white shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:border-accent hover:shadow-md hover:-translate-y-1.5 hover:shadow-glow-hover md:w-auto">
-              Ver Projetos
+            <a href="#clients" className="btn block w-full rounded-full bg-red-bright border border-red-bright py-3 px-8 text-center font-medium text-white shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:border-accent hover:shadow-md hover:-translate-y-1.5 hover:shadow-glow-hover md:w-auto">
+              Ver Clientes
             </a>
             <a href="#contact" className="btn btn-outline block w-full rounded-full border border-accent bg-transparent py-3 px-8 text-center font-medium text-accent shadow-sm transition duration-300 ease-in-out hover:bg-accent-light hover:shadow-md hover:-translate-y-1.5 md:w-auto md:ml-4">
               Entrar em Contato
