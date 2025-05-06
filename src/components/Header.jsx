@@ -42,7 +42,7 @@ function Header({ activeSection }) {
     { href: '#home', label: 'Home', delay: 'delay-1' },
     { href: '#about', label: 'Sobre', delay: 'delay-2' },
     { href: '#experience', label: 'Experiência', delay: 'delay-3' },
-    { href: '#projects', label: 'Projetos', delay: 'delay-4' },
+    { href: '#clients', label: 'Clientes', delay: 'delay-4' },
     // { href: '#testimonials', label: 'Depoimentos', delay: 'delay-5' },
     { href: '#contact', label: 'Contato', delay: 'delay-5' }, // Adjusted delay
     { href: '/anotacoes', label: 'Anotações', delay: 'delay-6' },

@@ -53,6 +53,26 @@
   */
 }
 
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move metade (conteúdo duplicado) */
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); } /* Começa na segunda metade */
+  100% { transform: translateX(0); } /* Termina na primeira metade */
+}
+
+.animate-infinite-scroll-left {
+  animation: scrollLeft 40s linear infinite; /* Aplica a animação */
+}
+
+.animate-infinite-scroll-right {
+   /* Começa deslocado para a direita para dar certo com keyframe */
+   /* A keyframe scrollRight já assume o início em -50% */
+  animation: scrollRight 40s linear infinite; /* Aplica a animação */
+}
+
 /* Animações on scroll (classe base controlada por JS/React) */
 .animate-on-scroll {
     opacity: 0;

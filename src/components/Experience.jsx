@@ -46,14 +46,24 @@ const TimelineItem = ({ title, company, period, descriptionItems, delayClass, po
 function Experience() {
   const experiences = [
     {
+      title: "Business Intelligence Coordinator",
+      company: "Kalidash, São Paulo",
+      period: "05/2025 - Presente",
+      descriptionItems: [
+        ""
+      ],
+      position: 'even', // 'odd' para esquerda, 'even' para direita no desktop
+      delay: 'delay-2'
+    },
+    {
       title: "Business Intelligence Consultant",
       company: "Kalidash, São Paulo",
-      period: "10/2024 - Presente",
+      period: "10/2024 - 05/2025",
       descriptionItems: [
         "Consultor BI e membro fundador da célula 'Horizon Team', focada em consultoria de dados."
       ],
       position: 'odd', // 'odd' para esquerda, 'even' para direita no desktop
-      delay: 'delay-2'
+      delay: 'delay-4'
     },
     {
         title: "Full Stack Developer", // Título combinado
@@ -65,7 +75,7 @@ function Experience() {
           "Administração de banco de dados (PostgreSQL) e otimização da integração banco-aplicação."
         ],
         position: 'even', // Pode ajustar se quiser alternar (só há 1 item por enquanto)
-        delay: 'delay-4'
+        delay: 'delay-8'
       },
   ];
 
