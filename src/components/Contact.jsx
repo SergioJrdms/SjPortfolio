@@ -125,7 +125,7 @@ function Contact() {
                     onChange={handleChange}
                     // Classes aplicadas
                     className="form-input w-full rounded-md border border-border-color bg-bg-primary py-3 px-4 text-text-primary transition duration-300 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none"
-                    placeholder="Ex: Astronomia / Rock / Qual o nome do seu gato? / Dados"
+                    placeholder="Ex: Astronomia / Rock / Dados..."
                  />
               </div>
               <div className="form-group">
