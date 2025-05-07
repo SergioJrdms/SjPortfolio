@@ -76,7 +76,7 @@ function Contact() {
             </p>
              <ContactItem icon={<FaEnvelope />} label="Email" value="sergiojunior.dms@gmail.com" link="mailto:sergiojunior.dms@gmail.com" />
              <ContactItem icon={<FaLinkedin />} label="LinkedIn" value="linkedin.com/in/ssergiojunior" link="https://linkedin.com/in/ssergiojunior" />
-             <ContactItem icon={<FaMapMarkerAlt />} label="Localização" value="São Paulo, Brasil (Remoto)" />
+             <ContactItem icon={<FaMapMarkerAlt />} label="Localização" value="São Paulo, Brasil" />
           </div>
 
           {/* Formulário com AJAX e ESTILOS CORRIGIDOS */}
