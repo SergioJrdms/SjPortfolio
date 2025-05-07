@@ -71,7 +71,7 @@ function Contact() {
           <div className="contact-info animate-on-scroll slide-in-left delay-2 md:text-left text-center">
             <h3 className="mb-6 text-2xl font-semibold">Entre em Contato</h3>
             <p className="mb-10 leading-relaxed text-text-secondary">
-              Estou sempre aberto a novas conexões, projetos desafiadores ou apenas um bom bate-papo
+              Estou sempre aberto a networking, desafios ou apenas um bom bate-papo
               sobre dados e produtos. Sinta-se à vontade para me contatar!
             </p>
              <ContactItem icon={<FaEnvelope />} label="Email" value="sergiojunior.dms@gmail.com" link="mailto:sergiojunior.dms@gmail.com" />
