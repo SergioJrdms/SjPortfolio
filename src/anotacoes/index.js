@@ -18,7 +18,7 @@ export const allNotesMeta = [
         path: '/anotacoes/01 - Product Owner/Product Owner IBM/Essential Skills and Tools for Innovation - IBM (M.md',
         title: 'Essential Skills and Tools for Innovation - Modulo 1',
         date: '2025-05-08',
-        excerpt: 'Habilidades e ferramentas essenciais necessárias como Product Owne',
+        excerpt: 'Habilidades e ferramentas essenciais necessárias como Product Owner',
         tags: ['Communication', 'Stakeholder', 'IBM', '01 - Product Owner'],
     }),
     processNote({
