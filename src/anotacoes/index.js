@@ -14,6 +14,14 @@ const processNote = (meta) => {
 export const allNotesMeta = [
     // === Notas dentro de ProductOwner/ProductOwnerIBM/ (EXISTENTES - NÃO MUDAR) ===
     processNote({
+        slug: '01 - Product Owner/01 - Product Owner IBM/Essential Skills and Tools for Innovation - IBM (M',
+        path: '/anotacoes/01 - Product Owner/Product Owner IBM/Essential Skills and Tools for Innovation - IBM (M.md',
+        title: 'Essential Skills and Tools for Innovation - Modulo 1',
+        date: '2025-05-08',
+        excerpt: 'Técnicas avançadas em colaboração e desenvolvimento de produto.',
+        tags: ['Communication', 'Stakeholder', 'IBM', '01 - Product Owner'],
+    }),
+    processNote({
         slug: '01 - Product Owner/01 - Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1',
         path: '/anotacoes/01 - Product Owner/Product Owner IBM/Communications & Stakeholder Management - IBM Cert-1.md',
         title: 'Communications & Stakeholder Management - Modulo 2',
