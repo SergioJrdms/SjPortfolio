@@ -71,12 +71,11 @@ function Contact() {
           <div className="contact-info animate-on-scroll slide-in-left delay-2 md:text-left text-center">
             <h3 className="mb-6 text-2xl font-semibold">Entre em Contato</h3>
             <p className="mb-10 leading-relaxed text-text-secondary">
-              Estou sempre aberto a novas conexões, projetos desafiadores ou apenas um bom bate-papo
+              Estou sempre aberto a networking, desafios ou apenas um bom bate-papo
               sobre dados e produtos. Sinta-se à vontade para me contatar!
             </p>
              <ContactItem icon={<FaEnvelope />} label="Email" value="sergiojunior.dms@gmail.com" link="mailto:sergiojunior.dms@gmail.com" />
              <ContactItem icon={<FaLinkedin />} label="LinkedIn" value="linkedin.com/in/ssergiojunior" link="https://linkedin.com/in/ssergiojunior" />
-             <ContactItem icon={<FaMapMarkerAlt />} label="Localização" value="São Paulo, Brasil (Remoto)" />
           </div>
 
           {/* Formulário com AJAX e ESTILOS CORRIGIDOS */}
@@ -126,7 +125,7 @@ function Contact() {
                     onChange={handleChange}
                     // Classes aplicadas
                     className="form-input w-full rounded-md border border-border-color bg-bg-primary py-3 px-4 text-text-primary transition duration-300 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none"
-                    placeholder="Ex: Oportunidade / Projeto"
+                    placeholder="Ex: Astronomia / Rock / Dados..."
                  />
               </div>
               <div className="form-group">
