@@ -15,13 +15,13 @@ function Hero() {
         <div className="hero-content mx-auto max-w-3xl text-center md:text-left">
           {/* Subtítulo e Título mantidos */}
           <span className="hero-subtitle inline-block animate-on-scroll fade-in delay-1 mb-4 rounded-full bg-accent-light px-5 py-1.5 text-sm font-medium text-accent animate-pulse">
-            Product Manager & Coordenador de BI
+            Product Manager / Owner & Coordenador de BI
           </span>
           <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"> {/* font-extrabold, tracking-tight */}
             Transformando Dados em Decisões e Visão em Produtos
           </h1>
           <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-text-secondary"> {/* text-lg, leading-relaxed */}
-          Transformo dados complexos em dashboards acionáveis e necessidades de negócio em produtos digitais valiosos. Meu objetivo é unir a visão estratégica de Product Management com a inteligência do BI para impulsionar resultados concretos.
+          Transformo dados complexos em dashboards acionáveis e necessidades de negócio em produtos digitais valiosos. Meu objetivo é unir a visão estratégica e operacional de Product Management / Ownership com a inteligência do BI para impulsionar resultados concretos.
           </p>
           {/* ===== FIM DA ATUALIZAÇÃO ===== */}
 
