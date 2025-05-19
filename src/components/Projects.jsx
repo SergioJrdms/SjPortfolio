@@ -39,6 +39,7 @@ function Projects() {
     { name: 'ControlID', logoSrc: '/logos/controlid.png' }, // Exemplo
     { name: 'Upik', logoSrc: '/logos/upik.png' }, // Exemplo
     { name: 'Bettina Rudolph', logoSrc: '/logos/bettina-rudolph.png' }, // Exemplo
+    { name: 'Método Start', logoSrc: '/logos/metodo-start.png' },
     // Se não tiver um logo, pode omitir logoSrc: { name: 'Empresa Sem Logo' }
   ];
   // ===== FIM DA ATUALIZAÇÃO =====
