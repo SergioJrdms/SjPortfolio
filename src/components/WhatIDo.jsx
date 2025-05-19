@@ -52,7 +52,7 @@ function WhatIDo() {
                            Minha atuação envolve desde a pesquisa e descoberta de necessidades (como a falta de segmentação de clientes na <span className="text-accent">3DLab</span> ou a otimização do funil de vendas na <span className="text-accent">Neon</span>), até a definição da visão, estratégia e roadmap do produto. Traduzo essas informações em requisitos claros para as equipes, priorizo o backlog e acompanho de perto o desenvolvimento.
                         </p>
                          <p>
-                            Mesmo em projetos de BI, como os da <span className="text-accent">Pilão</span> e <span className="text-accent">Angelus</span>, a mentalidade de PM é crucial para "produtizar" a análise, garantindo que ela seja uma ferramenta útil e de fácil adoção, desde a concepção com dados mockados ("product first") até o feedback e evolução.
+                            Mesmo em projetos de BI, como os da <span className="text-accent">Pilão</span> e <span className="text-accent">Angelus</span>, a mentalidade de PM/PO é crucial para "produtizar" a análise, garantindo que ela seja uma ferramenta útil e de fácil adoção, desde a concepção com dados mockados ("product first") até o feedback e evolução.
                         </p>
                     </ServiceBlock>
                 </div>
