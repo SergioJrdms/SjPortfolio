@@ -43,10 +43,10 @@ function WhatIDo() {
 
                     <ServiceBlock
                         icon={<FaRocket />}
-                        title="Product Management"
+                        title="Product Management / Ownership"
                     >
                          <p className="font-medium text-text-primary/90">
-                            Gerenciar um produto é garantir que estamos construindo a <span className="font-bold">coisa certa</span>, para as <span className="font-bold">pessoas certas</span>, no <span className="font-bold">momento certo</span>. É sobre entender profundamente o problema e orquestrar a solução.
+                            Ser dono e gestor de um produto é garantir que estamos construindo a <span className="font-bold">coisa certa</span>, para as <span className="font-bold">pessoas certas</span>, no <span className="font-bold">momento certo</span>. É sobre entender profundamente o problema e orquestrar a solução.
                         </p>
                         <p>
                            Minha atuação envolve desde a pesquisa e descoberta de necessidades (como a falta de segmentação de clientes na <span className="text-accent">3DLab</span> ou a otimização do funil de vendas na <span className="text-accent">Neon</span>), até a definição da visão, estratégia e roadmap do produto. Traduzo essas informações em requisitos claros para as equipes, priorizo o backlog e acompanho de perto o desenvolvimento.
