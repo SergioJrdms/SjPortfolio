@@ -132,7 +132,7 @@ function About() {
               Minha trajetória é marcada pela busca constante em traduzir dados em inteligência e ideias em produtos de valor. Com formação em <span className="text-accent">Ciência de Dados</span> pela Anhanguera e <span className="text-accent">Técnico em Informática</span> pela ETEC, desenvolvi uma base sólida que me permite atuar de forma analítica e estratégica.
             </p>
             <p className="mb-6 text-text-secondary text-lg leading-relaxed">
-              Minha experiência prática em <span className="text-accent">Business Intelligence</span> envolve desde a concepção de dashboards de vendas e marketing até a otimização de processos ETL e análise de RFV para segmentação de clientes. Paralelamente, meus estudos em <span className="text-accent">Product Management</span> me capacitam a entender o ciclo de vida de um produto, definir roadmaps e priorizar features que realmente impactam o usuário e o negócio.
+              Minha experiência prática em <span className="text-accent">Business Intelligence</span> envolve desde a concepção de dashboards de vendas e marketing até a otimização de processos ETL e análise de RFV para segmentação de clientes. Paralelamente, meus estudos em <span className="text-accent">Product Management / Ownership </span> me capacitam a entender o ciclo de vida de um produto, definir roadmaps e priorizar features que realmente impactam o usuário e o negócio.
             </p>
              <p className="text-text-secondary text-lg leading-relaxed">
               Meu objetivo é "arrumar a casa" em relação a dados, promover uma cultura data-driven e garantir que as soluções desenvolvidas sejam não apenas tecnicamente robustas, mas também intuitivas e eficazes para o usuário final.
