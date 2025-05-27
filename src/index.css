@@ -12,6 +12,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    /* Estilização da scrollbar para Firefox usando variáveis CSS */
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-bg-secondary);
   }
   body {
     @apply bg-bg-primary text-text-primary font-inter leading-relaxed overflow-x-hidden;
@@ -19,6 +22,28 @@
   ::selection {
     @apply bg-accent text-white;
   }
+}
+
+/* Estilização da scrollbar para WebKit usando variáveis CSS */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 10px;
+  border: 2px solid var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent-hover);
+}
   /* Adicione aqui estilos globais mínimos ou CSS customizado que
      seja muito difícil/verboso de fazer com Tailwind, se necessário.
      Ex: Potencialmente o posicionamento exato do ::after da timeline se
@@ -51,7 +76,6 @@
       .timeline-item::after { left: -28px; right: auto; }
   }
   */
-}
 
 @keyframes scrollLeft {
   0% { transform: translateX(0); }

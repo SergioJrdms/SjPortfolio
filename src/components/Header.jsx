@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Using react-icons
+import { FaBars, FaTimes } from 'react-icons/fa';
 
-const NavLink = ({ href, children, isActive, delayClass, onClick }) => ( // Adicionado onClick
-  <li className={`animate-on-scroll slide-in-right ${delayClass}`} onClick={onClick}> {/* Adicionado onClick */}
+const NavLink = ({ href, children, isActive, delayClass, onClick }) => (
+  <li className={`animate-on-scroll slide-in-right ${delayClass} group`} onClick={onClick}> {/* Adicionado 'group' aqui */}
     <a
       href={href}
-      className={`nav-link block py-2 relative text-text-primary font-medium transition-colors duration-300 hover:text-accent
-                after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px]
-                after:bg-accent after:transition-width after:duration-300 hover:after:w-full
-                ${isActive ? 'text-accent after:w-full' : ''}`}
+      aria-current={isActive ? "page" : undefined}
+      className={`nav-link block py-2 px-1 relative text-text-primary font-semibold tracking-wider text-xs sm:text-sm 
+                transition-all duration-300 ease-out hover:text-accent focus:text-accent focus:outline-none
+                after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[3px]
+                after:bg-accent after:rounded-full after:transition-all after:duration-300 after:ease-out
+                ${isActive ? 'text-accent after:w-full' : 'hover:after:w-1/2'}`}
     >
       {children}
     </a>
@@ -31,7 +33,6 @@ function Header({ activeSection }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close menu when a link is clicked
   const handleLinkClick = () => {
     if (isMenuOpen) {
       toggleMenu();
@@ -45,16 +46,16 @@ function Header({ activeSection }) {
     { href: '#clients', label: 'Clientes', delay: 'delay-4' },
     { href: '#what-i-do', label: 'O Que Faço?', delay: 'delay-5' },
     { href: '#contact', label: 'Contato', delay: 'delay-5' },
-    { href: '/anotacoes', label: 'Anotações', delay: 'delay-5' }, 
+    { href: '/anotacoes', label: 'Anotações', delay: 'delay-5' }, // Mantendo seu link
   ];
 
   return (
     <header
       id="header"
       className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-400 ease-in-out ${
-        isScrolled || isMenuOpen // Adicionado isMenuOpen para manter o fundo quando o menu mobile estiver aberto
-          ? 'bg-[rgba(18,18,18,0.85)] backdrop-blur-md shadow-lg py-4'
-          : 'bg-transparent py-6'
+        isScrolled || isMenuOpen
+          ? 'bg-[rgba(18,18,18,0.9)] backdrop-blur-lg shadow-xl py-3 sm:py-4'
+          : 'bg-transparent py-5 sm:py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -84,7 +85,7 @@ function Header({ activeSection }) {
                 href={item.href}
                 isActive={activeSection === item.href.substring(1)}
                 delayClass={item.delay}
-                onClick={handleLinkClick} // Passando handleLinkClick para NavLink no desktop também (boa prática)
+                onClick={handleLinkClick} 
               >
                 {item.label}
               </NavLink>
@@ -102,18 +103,18 @@ function Header({ activeSection }) {
         >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
-
-        {/* Mobile Navigation Menu */}
-        {/* Corrigido: A navegação mobile deve estar DENTRO do <header> mas fora do div do container principal se for para ocupar a largura toda */}
       </div>
-      {/* Mover o menu mobile para fora do div do container para que possa ocupar a largura total se necessário */}
-      <nav className={`md:hidden absolute top-full left-0 w-full bg-bg-secondary border-b border-border-color shadow-md transition-transform duration-300 ease-out ${isMenuOpen ? 'block' : 'hidden'}`}>
+
+      {/* Menu Mobile - posicionado abaixo do header principal */}
+      <nav className={`md:hidden absolute top-full left-0 w-full bg-bg-secondary border-b-2 border-accent shadow-lg transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'}`}>
         <ul id="nav-menu" className="flex flex-col items-center py-4">
           {navItems.map((item) => (
-            <li key={item.href} className="w-full text-center" onClick={handleLinkClick}> {/* handleLinkClick aqui também */}
+            <li key={item.href} className="w-full text-center">
               <a
                 href={item.href}
-                className={`nav-link block py-3 px-6 w-full transition-colors duration-300 hover:text-accent ${activeSection === item.href.substring(1) ? 'text-accent' : 'text-text-primary'}`}
+                aria-current={activeSection === item.href.substring(1) ? "page" : undefined}
+                className={`nav-link block py-3 px-6 w-full font-medium tracking-wide transition-all duration-300 ease-out hover:text-accent hover:bg-white/5 ${activeSection === item.href.substring(1) ? 'text-accent bg-white/10' : 'text-text-primary'}`}
+                onClick={handleLinkClick}
               >
                 {item.label}
               </a>
