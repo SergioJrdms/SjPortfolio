@@ -150,8 +150,11 @@ function PaginaListaNotas() {
                     <h1 className="section-title text-4xl md:text-5xl font-bold text-white mb-5">
                         Minhas Anotações
                     </h1>
-                    <p className="text-text-secondary text-lg mb-10 mx-auto">
+                    <p className="text-text-secondary text-lg mx-auto">
                         Compilado de estudos, insights e pensamentos sobre tecnologia, produtos e dados. Navegue pela estrutura abaixo.
+                    </p>
+                    <p className="font-Corinthia text-red-600 mb-10 font-black text-lg leading-none mt-1 cursor-default"> {/* Ajuste o tamanho e margem/padding conforme necessário */}
+                        SergioJunior
                     </p>
                     <div>
                         <Link

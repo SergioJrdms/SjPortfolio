@@ -40,6 +40,9 @@ function Footer() {
           </div>
           <div className="copyright text-sm text-text-secondary">
             &copy; {currentYear} Sergio Junior. Todos os direitos reservados.
+            <p className="font-Corinthia text-red-600 font-black text-sm leading-none mt-1 cursor-default"> {/* Ajuste o tamanho e margem/padding conforme necessário */}
+              Per Audacia Ad Astra
+            </p>
           </div>
         </div>
       </div>

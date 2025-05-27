@@ -20,6 +20,7 @@ export default {
         'hero-gradient-start': '#5200be24', // Roxo do gradiente hero
       },
       fontFamily: {
+        'Corinthia': ['"Corinthia"', 'cursive'],
         inter: ['Inter', 'sans-serif'],
       },
       gradientColorStops: theme => ({

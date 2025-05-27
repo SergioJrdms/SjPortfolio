@@ -87,6 +87,9 @@ function PaginaNotaIndividual() {
                                {noteData?.date && (<span className="flex items-center gap-1.5"><FaCalendarAlt className="opacity-70" />{noteData.date}</span>)}
                                {noteData?.tags && noteData.tags.length > 0 && (<div className="flex flex-wrap gap-2 items-center">{noteData.date && <span className="opacity-50">|</span>}{noteData.tags.map(tag => (<span key={tag} className="inline-block rounded-full bg-red-darker/50 px-2.5 py-0.5 text-xs text-red-bright/90">{tag}</span>))}</div>)}
                             </div>
+                            <p className="font-Corinthia text-red-600 font-black text-md leading-none mt-1 cursor-default"> {/* Ajuste o tamanho e margem/padding conforme necessário */}
+                                SergioJunior
+                            </p>
                         </header>
 
                         {/* Conteúdo */}
