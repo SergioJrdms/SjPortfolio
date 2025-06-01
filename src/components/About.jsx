@@ -142,28 +142,21 @@ function About() {
             <div className="skills flex flex-wrap gap-3 animate-on-scroll fade-in delay-4">
               <SkillTag>Business Intelligence</SkillTag>
               <SkillTag>Power BI</SkillTag>
-              <SkillTag>SQL Server</SkillTag>
-              <SkillTag>DAX</SkillTag>
-              <SkillTag>ETL (Talend)</SkillTag>
-              <SkillTag>Modern Data Stack (Airbyte, Airflow, dbt, Metabase)</SkillTag>
-              <SkillTag>AWS / Azure (Básico)</SkillTag>
+              <SkillTag>SQL Server / PostgreSQL</SkillTag>
+              <SkillTag>DAX / ETL</SkillTag>
+              <SkillTag>Modern Data Stack</SkillTag>
               <SkillTag>Modelagem de Dados</SkillTag>
               <SkillTag>Data Storytelling</SkillTag>
               <SkillTag>Ciência de Dados (EDA)</SkillTag>
-              <SkillTag>Estatística (Python)</SkillTag>
-              <SkillTag>Machine Learning (Classificação, Regressão, etc.)</SkillTag>
+              <SkillTag>Estatística / ML</SkillTag>
               <SkillTag>Python (Pandas, Numpy)</SkillTag>
-              <SkillTag>JavaScript / TypeScript</SkillTag>
-              <SkillTag>React.js / Next.js</SkillTag>
-              <SkillTag>HTML / CSS (Tailwind)</SkillTag>
-              <SkillTag>C# / Java / Dart (Básico)</SkillTag>
-              <SkillTag>PostgreSQL</SkillTag>
-              <SkillTag>Liderança</SkillTag>
-              <SkillTag>Gestão de Projetos/Equipes</SkillTag>
-              <SkillTag>Comunicação Assertiva / Didática</SkillTag>
-              <SkillTag>Trabalho em Grupo</SkillTag>
-              <SkillTag>Proatividade</SkillTag>
-              <SkillTag>Resiliência</SkillTag>
+              <SkillTag>React / TypeScript</SkillTag>
+              <SkillTag>Comunicação Assertiva</SkillTag>
+              <SkillTag>Gestão de Produtos</SkillTag>
+              <SkillTag>Definição de Roadmap</SkillTag>
+              <SkillTag>Priorização de Features</SkillTag>
+              <SkillTag>Visão de Negócio</SkillTag>
+              <SkillTag>Liderança Colaborativa</SkillTag>
               <SkillTag>Resolução de Problemas</SkillTag>
               <SkillTag>Autodidata</SkillTag>
               <SkillTag>Inglês Intermediário</SkillTag>
