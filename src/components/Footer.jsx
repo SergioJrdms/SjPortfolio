@@ -7,7 +7,7 @@ function Footer() {
   return (
     // ===== MODIFICAÇÕES NA TAG FOOTER =====
     <footer
-      className="mt-10 border-t border-accent/30 bg-gradient-to-b from-bg-secondary to-bg-primary py-16"
+      className=" bg-gradient-to-b from-bg-secondary to-black py-16"
       // bg-gradient-to-b from-bg-secondary to-bg-primary: Novo fundo
       // border-accent/30: Borda superior com tom vermelho sutil
       // py-16: Padding vertical aumentado

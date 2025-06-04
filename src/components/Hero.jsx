@@ -3,21 +3,18 @@ import ScrollDownIndicator from './ScrollDownIndicator';
 
 function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-16">
+    <section id="home" className="relative flex min-h-screen bg-gradient-to-br from-black via-gray-900 to-black items-center overflow-hidden pt-32 pb-16">
       {/* Background Gradiente Roxo */}
-      <div
-        className="hero-before absolute top-0 left-0 h-full w-full -z-10 bg-[radial-gradient(circle_at_top_left,_#6500be3c,_rgba(18,18,18,0)_90%)] pointer-events-none"
-        aria-hidden="true"
-      ></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-red-900/25 to-transparent"></div>
       
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="hero-content mx-auto max-w-3xl text-center md:text-left">
           {/* Subtítulo e Título mantidos */}
-          <span className="hero-subtitle inline-block animate-on-scroll fade-in delay-1 mb-4 rounded-full bg-accent-light px-5 py-1.5 text-sm font-medium text-accent animate-pulse">
+          <span className="hero-subtitle inline-block animate-on-scroll fade-in delay-1 mb-4 rounded-full bg-accent-light px-5 py-1.5 text-sm font-medium text-accent ">
             Product Manager / Owner & Coordenador de BI
           </span>
-          <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"> {/* font-extrabold, tracking-tight */}
+          <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-extrabold leading-tight tracking-tight  md:text-7xl bg-gradient-to-br from-slate-50  to-red-300  bg-clip-text text-transparent sm:text-5xl lg:text-6xl"> {/* font-extrabold, tracking-tight */}
             Transformando Dados em Decisões e Visão em Produtos
           </h1>
           <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-text-secondary"> {/* text-lg, leading-relaxed */}

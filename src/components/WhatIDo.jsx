@@ -18,7 +18,7 @@ const ServiceBlock = ({ icon, title, children }) => (
 
 function WhatIDo() {
     return (
-        <section id="what-i-do" className="py-24 bg-bg-primary">
+        <section id="what-i-do" className="py-24 bg-bg-secondary bg-gradient-to-br from-black via-gray-900/10 to-bg-secondary">
             <div className="container mx-auto px-6">
                 <h2 className="section-title text-center text-3xl font-bold tracking-tight text-text-primary sm:text-4xl font-heading animate-on-scroll fade-in">
                     Como Eu Gero Valor

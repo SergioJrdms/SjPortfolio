@@ -87,7 +87,7 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-24">
+    <section id="experience" className="py-24 bg-bg-secondary bg-gradient-to-br from-black via-gray-900/10 to-black">
       <div className="container mx-auto px-6">
         <h2 className="section-title text-center text-3xl font-semibold text-text-primary sm:text-4xl animate-on-scroll fade-in">Experiência Profissional</h2>
         <hr className="section-divider mx-auto mb-16 w-16 border-none h-[3px] bg-gradient-to-r from-accent to-accent-hover animate-on-scroll fade-in delay-1" />
