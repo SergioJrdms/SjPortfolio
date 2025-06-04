@@ -5,39 +5,66 @@ const TimelineItem = ({ title, company, period, descriptionItems, delayClass, po
   const isOdd = position === 'odd';
 
   return (
-    <div className={`timeline-item relative mb-12 w-full md:w-[calc(50%-2.5rem)] animate-on-scroll ${isOdd ? 'md:slide-in-left' : 'md:slide-in-right'} ${delayClass}`}>
-      {/* Card de Conteúdo */}
-      <div className="rounded-lg border border-border-color bg-bg-card p-7 shadow-sm transition-all duration-400 hover:border-accent hover:shadow-md hover:bg-[rgba(255,255,255,0.02)]">
-        <h3 className="job-title mb-1 text-xl font-semibold text-text-primary">{title}</h3>
-        <span className="company mb-1 block text-base font-medium text-accent">{company}</span>
-        <span className="period mb-4 block text-xs text-text-secondary">{period}</span>
-        <div className="job-description text-sm leading-relaxed text-text-secondary">
-          {/* Assume que descriptionItems é um array de strings */}
-          {descriptionItems && descriptionItems.length > 1 ? (
-            <ul className="mt-3 list-none space-y-2 pl-1">
-              {descriptionItems.map((item, index) => (
-                <li key={index} className="relative pl-5 before:absolute before:left-0 before:top-[9px] before:h-[5px] before:w-[5px] before:rounded-full before:bg-accent">
-                   {/* Use dangerouslySetInnerHTML se precisar renderizar HTML como os highlights */}
-                   <span dangerouslySetInnerHTML={{ __html: item }} />
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>{descriptionItems ? descriptionItems[0] : ''}</p> // Mostra como parágrafo se for item único
-          )}
+     <div className={`timeline-item relative mb-16 w-full md:w-[calc(50%-3rem)] animate-on-scroll ${isOdd ? 'md:slide-in-left' : 'md:slide-in-right'} ${delayClass}`}>
+      {/* Card de Conteúdo com design melhorado */}
+      <div className="group relative rounded-lg border border-border-color bg-bg-card p-6 backdrop-blur-sm transition-all duration-500 hover:border-accent hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-1 hover:bg-[rgba(255,255,255,0.02)]">
+        
+        {/* Brilho sutil no hover */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/5 via-transparent to-accent-light/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+        
+       
+
+        <div className="relative z-10">
+          {/* Header do card */}
+          <div className="mb-6">
+            <h3 className="job-title mb-2 text-2xl font-semibold text-text-primary transition-colors duration-300 ">
+              {title}
+            </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">
+              <span className="company mb-1 text-lg font-medium text-accent">
+                {company}
+              </span>
+              <span className="period text-sm text-text-secondary sm:border-l sm:border-border-color sm:pl-4">
+                {period}
+              </span>
+            </div>
+          </div>
+
+          {/* Linha divisória */}
+          <div className="mb-6 h-px bg-gradient-to-r from-accent/50 via-accent-light/30 to-transparent"></div>
+
+          {/* Descrição */}
+          <div className="job-description text-sm leading-relaxed text-text-secondary">
+            {descriptionItems && descriptionItems.length > 1 ? (
+              <ul className="space-y-3">
+                {descriptionItems.map((item, itemIndex) => (
+                  <li key={itemIndex} className="relative pl-6 transition-all duration-300 hover:text-text-primary">
+                    <div className="absolute left-0 top-2 h-2 w-2 rounded-full bg-gradient-to-r from-accent to-accent-hover shadow-sm"></div>
+                    <span 
+                      dangerouslySetInnerHTML={{ __html: item }}
+                      className="text-sm leading-relaxed"
+                    />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm leading-relaxed">
+                {descriptionItems ? descriptionItems[0] : ''}
+              </p>
+            )}
+          </div>
         </div>
       </div>
 
-       {/* Bolinha na Linha Central - Usando Tailwind Arbitrary Variants/Values */}
-       {/* Nota: A complexidade do calc() pode ser difícil no Tailwind puro. CSS customizado (comentado em index.css) pode ser mais fácil */}
-       <div className={`
-           timeline-dot absolute top-[28px] z-10 h-4 w-4 rounded-full border-[3px] border-accent bg-bg-primary transition-colors duration-300 group-hover:bg-accent
-           ${isOdd ? 'md:right-[calc(-2.5rem-8px)] md:left-auto' : 'md:left-[calc(-2.5rem-8px)] md:right-auto'}
-           /* Posicionamento mobile (ajustado no media query global) */
-           max-md:left-[-33px] max-md:right-auto /* para 992px */
-           max-sm:left-[-28px] max-sm:right-auto /* para 576px - Tailwind não tem max-sm por padrão, ajuste se necessário */
-       `}></div>
-
+      {/* Connector dot - Melhorado */}
+      <div className={`
+        timeline-dot absolute top-[60px] z-20 h-5 w-5 rounded-full border-[3px] border-accent bg-bg-primary shadow-lg transition-all duration-300 group-hover:border-accent-hover group-hover:shadow-accent/50
+        ${isOdd ? 'md:right-[calc(-3rem-10px)] md:left-auto' : 'md:left-[calc(-3rem-10px)] md:right-auto'}
+        max-md:left-[-35px] max-md:right-auto
+        max-sm:left-[-30px] max-sm:right-auto
+      `}>
+        <div className="absolute inset-1 rounded-full bg-gradient-to-r from-accent to-accent-hover opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
     </div>
   );
 };

@@ -113,7 +113,9 @@ const CounterItem = ({ target, title }) => {
 // Componente About (Restante sem alterações)
 function About() {
   return (
-    <section id="about" className="relative py-24 bg-bg-secondary bg-radial-glow-bl overflow-hidden">
+    <section id="about" className="relative py-24 bg-bg-secondary  bg-gradient-to-b from-red-900/5 via-transparent to-transparent bg-radial-glow-bl overflow-hidden">
+
+
       <div className="container mx-auto px-6 relative z-[1]">
         <h2 className="section-title text-center text-3xl font-bold tracking-tight text-text-primary sm:text-4xl font-heading animate-on-scroll fade-in">
           Sobre Mim
@@ -166,7 +168,7 @@ function About() {
         <div className="stats-counter mt-20 grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8 animate-on-scroll fade-in delay-5">
              <CounterItem target={2} title="Anos de Experiência" />
              <CounterItem target={25} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
-             <CounterItem target={15} title="Empresas Atendidas" /> {/* Ajuste conforme sua realidade */}
+             <CounterItem target={12} title="Empresas Atendidas" /> {/* Ajuste conforme sua realidade */}
         </div>
       </div>
     </section>

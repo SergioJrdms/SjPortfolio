@@ -15,6 +15,7 @@
     /* Estilização da scrollbar para Firefox usando variáveis CSS */
     scrollbar-width: thin;
     scrollbar-color: var(--color-accent) var(--color-bg-secondary);
+    overflow-x: hidden
   }
   body {
     @apply bg-bg-primary text-text-primary font-inter leading-relaxed overflow-x-hidden;

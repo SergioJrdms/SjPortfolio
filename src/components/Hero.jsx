@@ -5,7 +5,8 @@ function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen bg-gradient-to-br from-black via-gray-900 to-black items-center overflow-hidden pt-32 pb-16">
       {/* Background Gradiente Roxo */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-900/25 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-red-900/25 to-transparent">
+      </div>
       
 
       <div className="container mx-auto px-6 relative z-10">
@@ -33,12 +34,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* Formas Flutuantes e Scroll Indicator (sem alterações) */}
-      <div className="hero-shape absolute bottom-[-10%] right-[5%] -z-10 h-[250px] w-[250px] rounded-[65%_35%_65%_35%_/_35%_65%_35%_65%] bg-hero-shape opacity-[.05] animate-float pointer-events-none"></div>
-      <div className="hero-shape absolute bottom-[-12%] right-[6%] -z-10 h-[250px] w-[250px] rounded-[65%_35%_65%_35%_/_35%_65%_35%_65%] bg-hero-shape opacity-[.03] animate-float pointer-events-none"></div>
-      <div className="hero-shape absolute top-[15%] left-[-5%] -z-10 h-[180px] w-[180px] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] bg-hero-shape opacity-[.05] animate-floatReverse pointer-events-none"></div>
-      <div className="hero-shape absolute top-[17%] left-[-5%] -z-10 h-[180px] w-[180px] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] bg-hero-shape opacity-[.05] animate-floatReverse pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 h-3/4 w-3/4 -z-20 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--color-red-darkest)_0%,_transparent_70%)] opacity-10 animate-pulseSlow pointer-events-none" aria-hidden="true"></div>
       <ScrollDownIndicator />
     </section>
   );
