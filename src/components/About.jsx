@@ -109,11 +109,25 @@ const CounterItem = ({ target, title }) => {
     );
 };
 
+const StatHighlight = ({ value, label, description }) => (
+  <div className="stat-highlight group relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/90 p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/10">
+    <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+    <div className="relative z-10">
+      <div className="mb-2 text-2xl font-bold text-accent">{value}</div>
+      <div className="mb-1 text-sm font-semibold text-text-primary">{label}</div>
+      <div className="text-xs text-text-secondary">{description}</div>
+    </div>
+  </div>
+);
+
 
 // Componente About (Restante sem alterações)
 function About() {
   return (
     <section id="about" className="relative py-24 bg-bg-secondary  bg-gradient-to-b from-red-900/5 via-transparent to-transparent bg-radial-glow-bl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-red-900/5 via-transparent to-transparent"></div>
+      <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-accent/10 to-accent-hover/10 blur-3xl"></div>
+      <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-accent/10 to-accent-hover/10 blur-3xl"></div>
 
 
       <div className="container mx-auto px-6 relative z-[1]">
@@ -124,21 +138,50 @@ function About() {
 
         <div className="about-content grid grid-cols-1 items-center gap-16 md:grid-cols-2">
           <div className="profile-img-container relative mx-auto max-w-sm animate-on-scroll slide-in-left delay-2 rounded-xl shadow-lg transition-all duration-500 hover:scale-103 hover:shadow-glow-hover overflow-hidden">
-             <div className="absolute inset-0 z-10 bg-gradient-to-t from-accent-light/30 to-transparent transition-opacity duration-400 opacity-60 hover:opacity-20"></div>
-             <img src={minhaFoto} alt="Foto de perfil profissional de Sergio Junior" className="profile-img block w-full rounded-xl transition-transform duration-500"/>
+              <div className="relative overflow-hidden rounded-3xl border border-border-color bg-gradient-to-b from-bg-card to-bg-card/80 p-2 backdrop-blur-sm transition-all duration-700 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="overflow-hidden rounded-2xl">
+                  <img 
+                    src={minhaFoto} 
+                    alt="Foto" 
+                    className="h-full w-full object-cover transition-transform duration-700"
+                  />
+                </div>
+                             <div className="absolute -right-4 top-8 animate-on-scroll slide-in-right delay-4">
+                <StatHighlight 
+                  value="2+" 
+                  label="Anos Exp." 
+                  description="Business Intelligence"
+                />
+              </div>
+              <div className="absolute -left-4 bottom-8 animate-on-scroll slide-in-left delay-5">
+                <StatHighlight 
+                  value="25+" 
+                  label="Projetos" 
+                  description="Entregues"
+                />
+              </div>
+              </div>
           </div>
           <div className="about-text animate-on-scroll slide-in-right delay-3">
-            <h3 className="mb-6 text-2xl font-semibold font-heading">Conectando Estratégia, Dados e Produtos</h3>
-            {/* ===== TEXTO ATUALIZADO ===== */}
-            <p className="mb-6 text-text-secondary text-lg leading-relaxed">
-              Minha trajetória é marcada pela busca constante em traduzir dados em inteligência e ideias em produtos de valor. Com formação em <span className="text-accent">Ciência de Dados</span> pela Anhanguera e <span className="text-accent">Técnico em Informática</span> pela ETEC, desenvolvi uma base sólida que me permite atuar de forma analítica e estratégica.
-            </p>
-            <p className="mb-6 text-text-secondary text-lg leading-relaxed">
-              Minha experiência prática em <span className="text-accent">Business Intelligence</span> envolve desde a concepção de dashboards de vendas e marketing até a otimização de processos ETL e análise de RFV para segmentação de clientes. Paralelamente, meus estudos em <span className="text-accent">Product Management / Ownership </span> me capacitam a entender o ciclo de vida de um produto, definir roadmaps e priorizar features que realmente impactam o usuário e o negócio.
-            </p>
-             <p className="text-text-secondary text-lg leading-relaxed">
-              Meu objetivo é "arrumar a casa" em relação a dados, promover uma cultura data-driven e garantir que as soluções desenvolvidas sejam não apenas tecnicamente robustas, mas também intuitivas e eficazes para o usuário final.
-            </p>
+            <div className="mb-8">
+              <h3 className="mb-6 text-3xl font-bold text-text-primary">
+                Conectando <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Estratégia</span>, <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Dados</span> e <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Produtos</span>
+              </h3>
+              
+              <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
+                <p className="relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/80 p-6 backdrop-blur-sm">
+                  Minha trajetória é marcada pela busca constante em traduzir dados em inteligência estratégica. Com formação em <span className="font-semibold text-accent">Ciência de Dados</span> e <span className="font-semibold text-accent">Técnico em Informática</span>, desenvolvi uma base sólida para atuar de forma analítica e estratégica.
+                </p>
+                
+                <p className="relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/80 p-6 backdrop-blur-sm">
+                  Especializado em <span className="font-semibold text-accent">Business Intelligence</span>, trabalho desde dashboards de vendas até otimização de processos ETL. Meus estudos em <span className="font-semibold text-accent">Product Management</span> me capacitam a entender o ciclo completo de desenvolvimento de produtos.
+                </p>
+                
+                <p className="relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/80 p-6 backdrop-blur-sm">
+                  Meu objetivo é promover uma <span className="font-semibold text-accent">cultura data-driven</span> e garantir que as soluções sejam tecnicamente robustas, intuitivas e eficazes para o usuário final.
+                </p>
+              </div>
+            </div>
             {/* ===== FIM TEXTO ATUALIZADO ===== */}
             <h4 className="skills-title mt-10 mb-4 text-lg font-semibold tracking-wide font-heading">Principais Habilidades e Ferramentas:</h4>
             <div className="skills flex flex-wrap gap-3 animate-on-scroll fade-in delay-4">
