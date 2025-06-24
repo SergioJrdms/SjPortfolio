@@ -35,6 +35,7 @@ function Projects() {
         { name: 'Upik', logoSrc: '/logos/upik.png' },
         { name: 'Bettina Rudolph', logoSrc: '/logos/bettina-rudolph.png' },
         { name: 'Método Start', logoSrc: '/logos/metodo-start.png' },
+        { name: 'O Mundo dos Queijos', logoSrc: '/logos/OMundoDosQueijos.jpg' },
     ];
 
     const duplicatedCompanies = [...companies, ...companies];
