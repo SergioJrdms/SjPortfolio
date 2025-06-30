@@ -178,7 +178,7 @@ function About() {
                 </p>
                 
                 <p className="relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/80 p-6 backdrop-blur-sm">
-                  Meu objetivo é promover uma <span className="font-semibold text-accent">cultura data-driven</span> e garantir que as soluções sejam tecnicamente robustas, intuitivas e eficazes para o usuário final.
+                  Meu objetivo é promover uma <span className="font-semibold text-accent">cultura data-driven</span> de entrega de valor de forma <span className="font-semibold text-accent">rápida, adaptável e flexível</span>, além de garantir que as soluções sejam tecnicamente robustas, intuitivas e eficazes para o usuário final.
                 </p>
               </div>
             </div>
