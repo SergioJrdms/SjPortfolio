@@ -165,7 +165,7 @@ function About() {
           <div className="about-text animate-on-scroll slide-in-right delay-3">
             <div className="mb-8">
               <h3 className="mb-6 text-3xl font-bold text-text-primary">
-                Conectando <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Estratégia</span>, <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Dados</span> e <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Produtos</span>
+                Conectando <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Dados</span>, <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Cultura</span> e <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Estratégia</span>
               </h3>
               
               <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
