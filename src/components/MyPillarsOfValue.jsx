@@ -66,7 +66,7 @@ function MyPillarsOfValue() {
             {/* Círculo Inferior Esquerdo - Cultura & Governança */}
             <div
               onMouseEnter={() => handleDesktopHover('culture')}
-              className="absolute bottom-4 left-8 w-72 h-72 cursor-pointer transition-all duration-500 ease-out"
+              className="absolute bottom-4 left-14 w-72 h-72 cursor-pointer transition-all duration-500 ease-out"
             >
               <div className={`w-full h-full rounded-full border-2 flex flex-col justify-center items-center p-6 text-center transition-all duration-500 relative overflow-hidden
                 ${hoveredPillarId === 'culture' 
@@ -90,7 +90,7 @@ function MyPillarsOfValue() {
             {/* Círculo Inferior Direito - Comunicação Estratégica */}
             <div
               onMouseEnter={() => handleDesktopHover('communication')}
-              className="absolute bottom-4 right-8 w-72 h-72 cursor-pointer transition-all duration-500 ease-out"
+              className="absolute bottom-4 right-14 w-72 h-72 cursor-pointer transition-all duration-500 ease-out"
 
             >
               <div className={`w-full h-full rounded-full border-2 flex flex-col justify-center items-center p-6 text-center transition-all duration-500 relative overflow-hidden
@@ -125,9 +125,9 @@ function MyPillarsOfValue() {
               </defs>
               {hoveredPillarId && (
                 <>
-                  <line x1="50%" y1="18%" x2="30%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" className="animate-pulse" />
-                  <line x1="50%" y1="18%" x2="70%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" className="animate-pulse" />
-                  <line x1="30%" y1="70%" x2="70%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" className="animate-pulse" />
+                  <line x1="50%" y1="18%" x2="30%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6"  />
+                  <line x1="50%" y1="18%" x2="70%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6"  />
+                  <line x1="30%" y1="70%" x2="70%" y2="70%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6"  />
                 </>
               )}
             </svg>
