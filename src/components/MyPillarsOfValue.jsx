@@ -30,8 +30,7 @@ function MyPillarsOfValue() {
         <h2 className="section-title text-center text-3xl font-bold tracking-tight text-text-primary sm:text-4xl font-heading">
           Minha Filosofia de Valor
         </h2>
-        <hr className="section-divider mx-auto mt-4 mb-12 md:mb-20 w-16 border-none h-[3px] bg-gradient-to-r from-accent to-accent-hover" />
-
+        <hr className="section-divider mx-auto mb-16 w-16 border-none h-[3px] bg-gradient-to-r from-accent to-accent-hover animate-on-scroll fade-in delay-1" />
         {/* --- LAYOUT DESKTOP (Visível em 'lg' ou maiores) --- */}
         <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-20">
           {/* Diagrama de Venn Melhorado (Desktop) */}
