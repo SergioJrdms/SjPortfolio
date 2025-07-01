@@ -42,11 +42,12 @@ function Header({ activeSection }) {
   const navItems = [
     { href: '#home', label: 'Home', delay: 'delay-1' },
     { href: '#about', label: 'Sobre', delay: 'delay-2' },
-    { href: '#experience', label: 'Experiência', delay: 'delay-3' },
-    { href: '#clients', label: 'Clientes', delay: 'delay-4' },
-    { href: '#what-i-do', label: 'O Que Faço?', delay: 'delay-5' },
-    { href: '#contact', label: 'Contato', delay: 'delay-5' },
-    { href: '/anotacoes', label: 'Anotações', delay: 'delay-5' }, // Mantendo seu link
+    { href: '#my-philosophy', label: 'Pilares de Valor', delay: 'delay-3' },
+    { href: '#experience', label: 'Experiência', delay: 'delay-4' },
+    { href: '#clients', label: 'Clientes', delay: 'delay-5' },
+    { href: '#what-i-do', label: 'O Que Faço?', delay: 'delay-6' },
+    { href: '#contact', label: 'Contato', delay: 'delay-6' },
+    { href: '/anotacoes', label: 'Anotações', delay: 'delay-6' }, // Mantendo seu link
   ];
 
   return (

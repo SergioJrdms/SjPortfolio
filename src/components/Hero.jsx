@@ -19,7 +19,7 @@ function Hero() {
             Transformando Dados em Decisões e Visão em Produtos
           </h1>
           <p className="animate-on-scroll fade-in delay-3 mb-10 max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-text-secondary"> {/* text-lg, leading-relaxed */}
-          Transformo dados complexos em dashboards acionáveis e necessidades de negócio em produtos digitais valiosos. Meu objetivo é unir a visão estratégica e operacional de Product Management / Ownership com a inteligência do BI para impulsionar resultados concretos.
+          Transformo dados complexos em insights acionáveis e necessidades de negócio em produtos digitais valiosos. Meu objetivo é unir a visão estratégica e operacional de Product Management / Ownership com a inteligência do BI para impulsionar resultados concretos.
           </p>
           {/* ===== FIM DA ATUALIZAÇÃO ===== */}
 

@@ -7,6 +7,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import WhatIDo from '../components/WhatIDo';
+import MyPillarsOfValue from '../components/MyPillarsOfValue';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -94,6 +95,7 @@ function App() {
       <Header activeSection={activeSection} />
         <Hero />
         <About />
+        <MyPillarsOfValue />
         <Experience />
         <Projects />
         <WhatIDo />

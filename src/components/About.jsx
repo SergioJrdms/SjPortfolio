@@ -124,10 +124,9 @@ const StatHighlight = ({ value, label, description }) => (
 // Componente About (Restante sem alterações)
 function About() {
   return (
-    <section id="about" className="relative py-24 bg-bg-secondary  bg-gradient-to-b from-red-900/5 via-transparent to-transparent bg-radial-glow-bl overflow-hidden">
+    <section id="about" className="relative py-24 bg-bg-secondary  bg-gradient-to-t from-red-900/5 via-transparent to-transparent bg-radial-glow-bl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-red-900/5 via-transparent to-transparent"></div>
-      <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-accent/10 to-accent-hover/10 blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-accent/10 to-accent-hover/10 blur-3xl"></div>
+      
 
 
       <div className="container mx-auto px-6 relative z-[1]">
@@ -208,6 +207,8 @@ function About() {
             </div>
           </div>
         </div>
+      <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-accent/10 to-accent-hover/10 blur-3xl"></div>
+      <div className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-accent/10 to-accent-hover/10 blur-3xl"></div>
         <div className="stats-counter mt-20 grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8 animate-on-scroll fade-in delay-5">
              <CounterItem target={2} title="Anos de Experiência" />
              <CounterItem target={25} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
