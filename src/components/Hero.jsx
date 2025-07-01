@@ -13,7 +13,7 @@ function Hero() {
         <div className="hero-content mx-auto max-w-3xl text-center md:text-left">
           {/* Subtítulo e Título mantidos */}
           <span className="hero-subtitle inline-block animate-on-scroll fade-in delay-1 mb-4 rounded-full bg-accent-light px-5 py-1.5 text-sm font-medium text-accent ">
-            Product Manager / Owner & Coordenador de BI
+            Product Owner & Coordenador de BI
           </span>
           <h1 className="animate-on-scroll animate-fadeInUp delay-2 mb-6 text-4xl font-extrabold leading-tight tracking-tight  md:text-7xl bg-gradient-to-br from-slate-50  to-red-300  bg-clip-text text-transparent sm:text-5xl lg:text-6xl"> {/* font-extrabold, tracking-tight */}
             Transformando Dados em Decisões e Visão em Produtos

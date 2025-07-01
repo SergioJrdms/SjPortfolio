@@ -164,7 +164,7 @@ function About() {
           <div className="about-text animate-on-scroll slide-in-right delay-3">
             <div className="mb-8">
               <h3 className="mb-6 text-3xl font-bold text-text-primary">
-                Conectando <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Estratégia</span>, <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Dados</span> e <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Produtos</span>
+                Conectando <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Dados</span>, <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Cultura</span> e <span className="bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent">Estratégia</span>
               </h3>
               
               <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
@@ -177,7 +177,7 @@ function About() {
                 </p>
                 
                 <p className="relative overflow-hidden rounded-xl border border-border-color bg-gradient-to-r from-bg-card to-bg-card/80 p-6 backdrop-blur-sm">
-                  Meu objetivo é promover uma <span className="font-semibold text-accent">cultura data-driven</span> e garantir que as soluções sejam tecnicamente robustas, intuitivas e eficazes para o usuário final.
+                  Meu objetivo é promover uma <span className="font-semibold text-accent">cultura data-driven</span> de entrega de valor de forma <span className="font-semibold text-accent">rápida, adaptável e flexível</span>, além de garantir que as soluções sejam tecnicamente robustas, intuitivas e eficazes para o usuário final.
                 </p>
               </div>
             </div>
@@ -211,8 +211,8 @@ function About() {
       <div className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-accent/10 to-accent-hover/10 blur-3xl"></div>
         <div className="stats-counter mt-20 grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8 animate-on-scroll fade-in delay-5">
              <CounterItem target={2} title="Anos de Experiência" />
-             <CounterItem target={25} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
-             <CounterItem target={12} title="Empresas Atendidas" /> {/* Ajuste conforme sua realidade */}
+             <CounterItem target={28} title="Projetos Entregues" /> {/* Ajuste conforme sua realidade */}
+             <CounterItem target={13} title="Empresas Atendidas" /> {/* Ajuste conforme sua realidade */}
         </div>
       </div>
     </section>
