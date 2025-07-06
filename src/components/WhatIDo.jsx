@@ -54,7 +54,7 @@ function WhatIDo() {
                         title="Product Management / Ownership"
                     >
                         <p className="font-medium text-text-primary/90 text-md">
-                            Ser dono e gestor de um produto é garantir que estamos construindo a <span className="font-bold text-accent">coisa certa</span>, para as <span className="font-bold text-accent">pessoas certas</span>, no <span className="font-bold text-accent">momento certo</span>. É sobre entender profundamente o problema e orquestrar a solução.
+                            Como Certified Professional Scrum Product Owner (PSPO), sei que dono e gestor de um produto é garantir que estamos construindo a <span className="font-bold text-accent">coisa certa</span>, para as <span className="font-bold text-accent">pessoas certas</span>, no <span className="font-bold text-accent">momento certo</span>. É sobre entender profundamente o problema e orquestrar a solução.
                         </p>
                         
                         <p>
